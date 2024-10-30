@@ -1,0 +1,14 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm server.js"
+  },
+  "author": "Suraj S",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
