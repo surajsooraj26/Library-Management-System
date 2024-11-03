@@ -10,6 +10,7 @@ const app = express();
 const port = process.env.PORT || 3501; // Use environment variable for port
 
 app.use(logger);
+require("dotenv").config();
 
 const whitelist = [
   "https://www.yoursite.com",
@@ -35,8 +36,6 @@ app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for json
 app.use(express.json());
-
-require("dotenv").config();
 
 app.get("/", (req, res) => {
   res.send("Hello world");
