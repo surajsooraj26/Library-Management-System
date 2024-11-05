@@ -13,10 +13,6 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello world");
-});
-
 app.use(errorHandler);
 // Connect to MongoDB and Server
 mongoose
