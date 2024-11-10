@@ -14,7 +14,7 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(errorHandler);
-app.use("/", adminRoutes);
+app.use("/api/admin", adminRoutes);
 
 // Connect to MongoDB and Server
 mongoose
